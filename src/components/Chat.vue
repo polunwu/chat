@@ -1,6 +1,20 @@
 <template>
   <div class="chat container">
-    <h2>Chat {{this.name}}</h2>
+    <h2 class="center teal-text">Chat Room</h2>
+    <div class="card">
+      <div class="card-content">
+        <ul class="messages">
+          <li>
+            <span class="teal-text">Name</span>
+            <span class="grey-text text-darken-3">message</span>
+            <span class="grey-text time">time</span>
+          </li>
+        </ul>
+      </div>
+      <div class="card-action">
+        <input type="text" />
+      </div>
+    </div>
   </div>
 </template>
 
@@ -17,15 +31,15 @@ export default {
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
 <style>
-.welcome {
-  max-width: 400px;
-  margin-top: 100px;
+.chat h2 {
+  font-size: 2.6em;
+  margin-bottom: 40px;
 }
-.welcome h2 {
-  font-size: 3em;
+.chat span {
+  font-size: 1.4em;
 }
-
-.welcome button {
-  margin: 30px auto;
+.chat .time {
+  display: block;
+  font-size: 1.2em;
 }
 </style>
